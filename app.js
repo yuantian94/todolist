@@ -10,7 +10,7 @@ let workItems =[];
 
 app.get("/",(req,res)=>{
   let page ="/";
-  let day = date();
+  let day = date.getDate();
   res.render("list", {listTitle: day, newListItems:items, pagePostedFrom:page});
 });
 
